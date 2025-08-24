@@ -2,9 +2,9 @@ import { Text, StyleSheet } from 'react-native';
 
 import Colors from '../../constants/color';
 
-function InstructionText({ children }) {
+function InstructionText({ children, style }) {
   return (
-    <Text style={styles.instructionText}>
+    <Text style={[styles.instructionText, style]}>
       {children}
     </Text>
   );
